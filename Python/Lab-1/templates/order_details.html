@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load i18n %}
+
+{% block list %}
+    <div class="col-md-offset-1 col-md-9">
+        <h4>{{ order.trip }}</h4>
+        <p>{% trans "Payment" %}: {{ order.payment }}</p>
+        {% if user.is_authenticated %}
+            <p><label>Delivered:  </label><input type="checkbox" id="delivered_check" {% if order.is_delivered %} checked="checked"{% endif %} > </p>
+            <p><label>Car is broken:  </label><input type="checkbox" id="car_is_broken_check" {% if order.car.is_broken %} checked="checked"{% endif %} > </p>
+            <p>
+                <button data-id="{{ order.id }}" id="submit_delivery"
+                        class="btn btn-success">{% trans "Submit delivery" %}</button>
+            </p>
+        {% endif %}
+    </div>
+{% endblock %}

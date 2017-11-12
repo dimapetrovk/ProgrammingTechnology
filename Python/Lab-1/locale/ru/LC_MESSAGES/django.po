@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-28 14:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: auto_main/settings.py:172
+msgid "English"
+msgstr "Английский"
+
+#: auto_main/settings.py:173
+msgid "Russian"
+msgstr "Русский"
+
+#: templates/index.html:27
+msgid "Back"
+msgstr "Назад"
+
+#: templates/index.html:29
+msgid "Log out"
+msgstr "Выйти"
+
+#: templates/index.html:34
+msgid "Sign In"
+msgstr "Вход"
+
+#: templates/index.html:39
+msgid "Autobase"
+msgstr "Автобаза"
+
+#: templates/order_list.html:11
+msgid "Payment"
+msgstr "Оплата"
+
+#: templates/order_details.html:13
+msgid "Submit delivery"
+msgstr "Подтвердить доставку"

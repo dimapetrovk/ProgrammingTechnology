@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% load i18n %}
+
+{% block auth_btns %}{% endblock %}
+
+{% block list %}
+    <input type="text" placeholder="Username" id="sign_in_username_input"/>
+    <input type="password" placeholder="Password" id="sign_in_password_input"/>
+    <input type="button" value="SignIn" class="btn btn-primary" id="sign_in_btn"/>
+{% endblock %}

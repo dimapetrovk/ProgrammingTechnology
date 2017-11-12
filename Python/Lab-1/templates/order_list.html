@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load i18n %}
+
+{% block list %}
+    <ul class="list-group">
+        {% for order in orders %}
+            <li class="list-group-item row">
+                <a href="/order/{{ order.pk }}">
+                    <div class="col-md-3">
+                        <h3>{{ order.trip }}</h3>
+                        <span>{% trans "Payment" %}: {{ order.payment }}</span>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -54,5 +54,40 @@
             </growingTips>
             <multiplying>Seeds</multiplying>
         </flower>
+
+        <flower>
+            <flowerID>4</flowerID>
+            <name>Test1</name>
+            <soil>Brown Ears</soil>
+            <origin>Argentina</origin>
+            <visualParameters>
+                <stalkColor>orange</stalkColor>
+                <leafColor>green</leafColor>
+                <size>400</size>
+            </visualParameters>
+            <growingTips>
+                <temperature>3</temperature>
+                <light>false</light>
+                <water>350</water>
+            </growingTips>
+            <multiplying>Leaves</multiplying>
+        </flower>
+        <flower>
+            <flowerID>5</flowerID>
+            <name>Test2</name>
+            <soil>Brown Ears</soil>
+            <origin>Argentina</origin>
+            <visualParameters>
+                <stalkColor>orange</stalkColor>
+                <leafColor>green</leafColor>
+                <size>400</size>
+            </visualParameters>
+            <growingTips>
+                <temperature>3</temperature>
+                <light>false</light>
+                <water>350</water>
+            </growingTips>
+            <multiplying>Cuttings</multiplying>
+        </flower>
     </flowers>
 </Flower>

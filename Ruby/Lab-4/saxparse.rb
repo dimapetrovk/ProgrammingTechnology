@@ -14,6 +14,18 @@ class Flower
   def to_s
     @flowerID + " " + @name + " " + @multiplying
   end
+
+  def set_g(g)
+    if(g == "Chernozems" || g == "Podzols" || g == "Brown Ears")
+      this.growingTips = g
+    end
+  end
+
+  def set_m(m)
+    if(m == "Leaves" || m == "Cuttings" || m == "Seeds")
+      this.multiplying = m
+    end
+  end
 end
 
 text = File.read("Flower.xml")

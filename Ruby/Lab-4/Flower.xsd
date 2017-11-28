@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="FlowerNS"
+        xmlns="FlowerNS"
+        elementFormDefault="qualified">
+
+    <xs:element name="Flower">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="flowers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="flower" type="flower" minOccurs="1" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="soil" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Chernozems" />
+            <xs:enumeration value="Podzols" />
+            <xs:enumeration value="Brown Ears" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="multiplying" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Leaves" />
+            <xs:enumeration value="Cuttings" />
+            <xs:enumeration value="Seeds" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="flower">
+        <xs:sequence>
+            <xs:element name="flowerID" type="xs:int"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="soil" type="soil"/>
+            <xs:element name="origin" type="xs:string"/>
+            <xs:element name="visualParameters">
+                <xs:complexType >
+                    <xs:sequence>
+                        <xs:element name="stalkColor" type="xs:string"/>
+                        <xs:element name="leafColor" type="xs:string"/>
+                        <xs:element name="size" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="growingTips">
+                <xs:complexType >
+                    <xs:sequence>
+                        <xs:element name="temperature" type="xs:int"/>
+                        <xs:element name="light" type="xs:boolean"/>
+                        <xs:element name="water" type="xs:int"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="multiplying" type="multiplying"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
